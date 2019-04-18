@@ -1,0 +1,13 @@
+containers:
+  - name: {name}
+    imageDetails:
+      imagePath: {docker_image_path}
+      username: {docker_image_username}
+      password: {docker_image_password}
+    ports:
+    - containerPort: 8080
+      protocol: TCP
+    config:
+      BASE_URL: {base_url}
+    command: ["bash", "-c"]
+    args: ["echo BASE_URL: $BASE_URL; /bin/sleep infinity"]
