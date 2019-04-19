@@ -2,3 +2,4 @@ includes:
   - "layer:caas-base"
   - "layer:docker-resource"
   - "interface:sse-endpoint"
+repo: https://github.com/tengu-team/layer-sse-consumer.git

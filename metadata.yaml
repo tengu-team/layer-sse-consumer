@@ -1,9 +1,9 @@
 name: sse-consumer
-summary: Example SSE consumer
+summary: SSE consumer
 maintainers:
   - Merlijn Sebrechts <merlijn.sebrechts@ugent.be>
 description: |
-  Example SSE consumer k8s charm
+  SSE consumer k8s charm
 tags:
   - database
 series:
@@ -11,6 +11,7 @@ series:
 resources:
   consumer_image:
     type: oci-image
+    auto-fetch: true
     description: "Image used SSE consumer."
 requires:
     sse-endpoint:
